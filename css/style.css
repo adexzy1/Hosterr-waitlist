@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@400;600;700;800&display=swap');
+:root {
+  --font1: 'Lato', sans-serif;
+  --font2: 'Playfair Display', serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f9f3e7;
+  font-family: var(--font1);
+}
+a {
+  text-decoration: none;
+}
+/**** navigation section****/
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header svg {
+  cursor: pointer;
+}
+nav {
+  display: none;
+}
+.nav_form-links {
+  display: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 5rem;
+}
+.logo a {
+  font-size: 13px;
+  background: linear-gradient(
+    90deg,
+    rgba(234, 171, 85, 1) 0%,
+    rgba(234, 96, 111, 1) 100%
+  );
+  border-radius: 2rem;
+  padding: 5px 10px;
+  color: #fff;
+  margin-left: 5px;
+}
+/******* Hero section ********/
+.hero_section {
+  padding: 20px;
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+  overflow: hidden;
+}
+.hero_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 20rem;
+}
+.hero_img img {
+  position: absolute;
+  width: 14.5rem;
+}
+.blue_img {
+  transform: rotate(-47deg);
+}
+.pink_img {
+  transform: rotate(-35deg);
+}
+.purple_img {
+  transform: rotate(-20deg);
+}
+.hero_details h1 {
+  font-family: var(--font2);
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+}
+.hero_details p {
+  font-size: 300;
+  line-height: 1.5rem;
+  color: #5a5a58;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+.hero_details input {
+  width: 100%;
+  height: 3.5rem;
+  border: none;
+  padding-left: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.btn {
+  width: 100%;
+  height: 3.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #4977e9;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.form_info {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.form_info span {
+  padding-left: 0.3rem;
+  color: #5a5a58;
+  font-weight: 300;
+}
+/******* Hero section ********/
+footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+footer ul {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  list-style: none;
+  color: #5a5a58;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+.help_centre {
+  display: flex;
+  align-items: center;
+}
+.help_centre div {
+  padding-left: 1rem;
+}
+.help_centre p {
+  color: #5a5a58;
+  font-weight: 300;
+}
