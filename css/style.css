@@ -15,6 +15,9 @@ body {
 a {
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
 /**** navigation section****/
 header {
   padding: 20px;
@@ -84,7 +87,6 @@ nav {
   padding-bottom: 1rem;
 }
 .hero_details p {
-  font-size: 300;
   line-height: 1.5rem;
   color: #5a5a58;
   font-weight: 300;
@@ -99,7 +101,8 @@ nav {
   margin-bottom: 1rem;
   outline: none;
 }
-.hero_details h1 br {
+.hero_details h1 br,
+.hero_details p br {
   display: none;
 }
 .btn {
@@ -196,7 +199,7 @@ footer ul li:hover {
   .form input {
     width: 18rem;
   }
-  .form button {
+  .btn {
     width: 9rem;
     margin-left: 1rem;
   }
@@ -217,5 +220,86 @@ footer ul li:hover {
   }
   footer ul li {
     margin-right: 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /******* Header section ********/
+  header,
+  footer,
+  .hero_section {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+  header svg {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  nav ul li {
+    padding-left: 1rem;
+    font-size: 16px;
+  }
+  nav ul li a {
+    color: #5a5a58;
+  }
+  .nav_form-links {
+    display: flex;
+    align-items: center;
+  }
+  .nav_form-links a {
+    font-size: 16px;
+    color: #5a5a58;
+  }
+  /******* Hero section ********/
+  .hero_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 5rem;
+  }
+  .hero_img {
+    width: 20rem;
+    justify-self: flex-end;
+    grid-column: 2;
+  }
+  .hero_img img {
+    width: 21rem;
+  }
+  .hero_details {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .hero_details p br {
+    display: block;
+  }
+  .hero_details h1 {
+    padding-right: 0;
+    letter-spacing: unset;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  header,
+  footer,
+  .hero_section {
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+  .hero_details h1 br {
+    display: block;
+  }
+  .hero_img img {
+    width: 23rem;
+  }
+  .hero_img {
+    width: 23rem;
+  }
+  .hero_section {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
   }
 }
