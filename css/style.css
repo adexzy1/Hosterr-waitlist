@@ -73,13 +73,16 @@ nav {
   width: 14.5rem;
 }
 .blue_img {
-  transform: rotate(-47deg);
+  animation: blue-img 1s linear;
+  animation-fill-mode: forwards;
 }
 .pink_img {
-  transform: rotate(-35deg);
+  animation: pink-img 1s linear;
+  animation-fill-mode: forwards;
 }
 .purple_img {
-  transform: rotate(-20deg);
+  animation: purple-img 1s linear;
+  animation-fill-mode: forwards;
 }
 .hero_details h1 {
   font-family: var(--font2);
@@ -115,6 +118,9 @@ nav {
   font-size: 17px;
   font-weight: 500;
   cursor: pointer;
+}
+.btn:hover {
+  background-color: #15244b;
 }
 .form_info {
   display: flex;
@@ -161,6 +167,40 @@ footer ul li:hover {
 }
 .help_centre h5 {
   padding-top: 5px;
+}
+/******* Animations ********/
+@keyframes blue-img {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(-47deg);
+  }
+}
+@keyframes pink-img {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(-35deg);
+  }
+}
+@keyframes purple-img {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
 }
 /******* media queries ********/
 @media only screen and (min-width: 768px) {
