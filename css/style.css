@@ -97,6 +97,10 @@ nav {
   padding-left: 1rem;
   border-radius: 5px;
   margin-bottom: 1rem;
+  outline: none;
+}
+.hero_details h1 br {
+  display: none;
 }
 .btn {
   width: 100%;
@@ -119,7 +123,7 @@ nav {
   color: #5a5a58;
   font-weight: 300;
 }
-/******* Hero section ********/
+/******* footer section ********/
 footer {
   padding: 20px;
   display: flex;
@@ -134,9 +138,16 @@ footer ul {
   font-weight: 300;
   margin-bottom: 3rem;
 }
+footer ul li {
+  cursor: pointer;
+}
+footer ul li:hover {
+  text-decoration: underline;
+}
 .help_centre {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .help_centre div {
   padding-left: 1rem;
@@ -144,4 +155,67 @@ footer ul {
 .help_centre p {
   color: #5a5a58;
   font-weight: 300;
+}
+.help_centre h5 {
+  padding-top: 5px;
+}
+/******* media queries ********/
+@media only screen and (min-width: 768px) {
+  header,
+  footer {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  header {
+    margin-top: 1rem;
+  }
+  .logo img {
+    width: unset;
+    margin-right: 0.5rem;
+  }
+  /******* Hero section ********/
+  .hero_section {
+    padding: 0rem 3rem 20px 3rem;
+    margin: 0;
+  }
+  .hero_img img {
+    width: 20rem;
+  }
+  .hero_img {
+    height: 23rem;
+  }
+  .hero_details h1 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    padding-right: 10%;
+    letter-spacing: 0.15rem;
+  }
+  .form {
+    display: flex;
+  }
+  .form input {
+    width: 18rem;
+  }
+  .form button {
+    width: 9rem;
+    margin-left: 1rem;
+  }
+  .form_info {
+    margin-top: 0;
+  }
+  /******* footer section ********/
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  footer ul {
+    align-items: center;
+    margin-bottom: 0;
+  }
+  footer ul li {
+    margin-right: 1rem;
+  }
 }
